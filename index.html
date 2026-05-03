@@ -12,6 +12,43 @@
         .bg-gradient-green { background: radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.15) 0%, transparent 70%); }
         .glass-card { background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .green-glow { text-shadow: 0 0 10px rgba(34, 197, 94, 0.5); }
+        
+        /* Mockup de Celular de Alta Qualidade */
+        .phone-mockup {
+            position: relative;
+            width: 280px;
+            height: 580px;
+            margin: auto;
+            border: 12px solid #1a1a1a;
+            border-radius: 40px;
+            background: #000;
+            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.5), 0 30px 60px -30px rgba(0,0,0,0.5), inset 0 0 2px 2px rgba(255,255,255,0.1);
+            overflow: hidden;
+            z-index: 1;
+        }
+        .phone-mockup::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 25px;
+            background: #1a1a1a;
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
+            z-index: 10;
+        }
+        .phone-mockup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 28px;
+        }
+        
+        @media (min-width: 768px) {
+            .phone-mockup { width: 300px; height: 620px; }
+        }
     </style>
 </head>
 <body class="bg-[#0a0a0a] text-gray-100">
@@ -59,9 +96,11 @@
             </div>
             
             <!-- Hero Image / Mockup -->
-            <div class="mt-20 relative max-w-5xl mx-auto">
-                <div class="absolute -inset-1 bg-gradient-to-r from-[#22C55E] to-blue-500 rounded-2xl blur opacity-20"></div>
-                <img src="assets/Captura de tela 2026-05-02 221924.png" alt="Dashboard Oficina Notes" class="relative rounded-2xl border border-white/10 shadow-2xl">
+            <div class="mt-20 relative max-w-md mx-auto">
+                <div class="absolute -inset-4 bg-[#22C55E] opacity-20 blur-3xl rounded-full"></div>
+                <div class="phone-mockup shadow-[0_0_50px_rgba(34,197,94,0.2)]">
+                    <img src="assets/Captura de tela 2026-05-02 221924.png" alt="Dashboard Oficina Notes">
+                </div>
             </div>
         </div>
     </section>
@@ -82,7 +121,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-3">Dashboard Inteligente</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Visualize todo o fluxo da sua oficina em uma única tela. Filtre por status: "Em Espera", "Na Oficina" ou "Finalizado" com um clique.
+                        Visualize todo the fluxo da sua oficina em uma única tela. Filtre por status: "Em Espera", "Na Oficina" ou "Finalizado" com um clique.
                     </p>
                 </div>
                 
@@ -112,7 +151,7 @@
     </section>
 
     <!-- Deep Dive Features -->
-    <section class="py-24 px-6">
+    <section class="py-24 px-6 overflow-hidden">
         <div class="max-w-7xl mx-auto space-y-32">
             
             <!-- Row 1 -->
@@ -135,8 +174,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex-1">
-                    <img src="assets/Captura de tela 2026-05-02 221953.png" alt="Criação de OS" class="rounded-2xl border border-white/10 shadow-2xl transform rotate-2 hover:rotate-0 transition-all duration-500">
+                <div class="flex-1 flex justify-center">
+                    <div class="phone-mockup transform rotate-2 hover:rotate-0 transition-all duration-500">
+                        <img src="assets/Captura de tela 2026-05-02 221953.png" alt="Criação de OS">
+                    </div>
                 </div>
             </div>
 
@@ -159,8 +200,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-1">
-                    <img src="assets/Captura de tela 2026-05-02 221937.png" alt="App Mobile" class="rounded-2xl border border-white/10 shadow-2xl transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                <div class="flex-1 flex justify-center">
+                    <div class="phone-mockup transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                        <img src="assets/Captura de tela 2026-05-02 221937.png" alt="App Mobile">
+                    </div>
                 </div>
             </div>
 
@@ -180,8 +223,10 @@
                         <p class="text-sm text-gray-400">Realize cálculos rápidos de orçamentos sem sair do aplicativo.</p>
                     </div>
                 </div>
-                <div class="flex-1">
-                    <img src="assets/Captura de tela 2026-05-02 222044.png" alt="Checklist e Financeiro" class="rounded-2xl border border-white/10 shadow-2xl transform rotate-1 hover:rotate-0 transition-all duration-500">
+                <div class="flex-1 flex justify-center">
+                    <div class="phone-mockup transform rotate-1 hover:rotate-0 transition-all duration-500">
+                        <img src="assets/Captura de tela 2026-05-02 222044.png" alt="Checklist e Financeiro">
+                    </div>
                 </div>
             </div>
 
