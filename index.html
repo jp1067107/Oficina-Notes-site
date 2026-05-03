@@ -13,37 +13,52 @@
         .glass-card { background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .green-glow { text-shadow: 0 0 10px rgba(34, 197, 94, 0.5); }
         
-        /* Mockup de Celular de Alta Qualidade */
+        /* Mockup de Celular 3D de Alta Qualidade */
+        .phone-container {
+            perspective: 1000px;
+            display: inline-block;
+        }
         .phone-mockup {
             position: relative;
             width: 280px;
             height: 580px;
             margin: auto;
-            border: 12px solid #1a1a1a;
-            border-radius: 40px;
+            border: 8px solid #1a1a1a;
+            border-radius: 36px;
             background: #000;
-            box-shadow: 0 50px 100px -20px rgba(0,0,0,0.5), 0 30px 60px -30px rgba(0,0,0,0.5), inset 0 0 2px 2px rgba(255,255,255,0.1);
+            box-shadow: 
+                -10px 10px 20px rgba(0,0,0,0.5),
+                -20px 20px 40px rgba(0,0,0,0.3),
+                inset 0 0 0 2px rgba(255,255,255,0.05);
             overflow: hidden;
             z-index: 1;
+            transform: rotateY(-15deg) rotateX(5deg) rotateZ(1deg);
+            transition: transform 0.5s ease;
         }
+        .phone-mockup:hover {
+            transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+        }
+        /* Camera / Dynamic Island Style (sem cortar imagem) */
         .phone-mockup::before {
             content: '';
             position: absolute;
-            top: 0;
+            top: 12px;
             left: 50%;
             transform: translateX(-50%);
-            width: 140px;
-            height: 25px;
-            background: #1a1a1a;
-            border-bottom-left-radius: 18px;
-            border-bottom-right-radius: 18px;
+            width: 80px;
+            height: 18px;
+            background: #111;
+            border-radius: 10px;
             z-index: 10;
+            border: 1px solid rgba(255,255,255,0.05);
         }
         .phone-mockup img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain; /* Garante que a imagem não seja cortada */
+            background: #000;
             border-radius: 28px;
+            padding: 5px; /* Espaço para não encostar nas bordas */
         }
         
         @media (min-width: 768px) {
@@ -96,7 +111,7 @@
             </div>
             
             <!-- Hero Image / Mockup -->
-            <div class="mt-20 relative max-w-md mx-auto">
+            <div class="mt-20 relative max-w-md mx-auto phone-container">
                 <div class="absolute -inset-4 bg-[#22C55E] opacity-20 blur-3xl rounded-full"></div>
                 <div class="phone-mockup shadow-[0_0_50px_rgba(34,197,94,0.2)]">
                     <img src="assets/Captura de tela 2026-05-02 221924.png" alt="Dashboard Oficina Notes">
@@ -174,8 +189,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex-1 flex justify-center">
-                    <div class="phone-mockup transform rotate-2 hover:rotate-0 transition-all duration-500">
+                <div class="flex-1 flex justify-center phone-container">
+                    <div class="phone-mockup">
                         <img src="assets/Captura de tela 2026-05-02 221953.png" alt="Criação de OS">
                     </div>
                 </div>
@@ -200,8 +215,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex-1 flex justify-center">
-                    <div class="phone-mockup transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                <div class="flex-1 flex justify-center phone-container">
+                    <div class="phone-mockup">
                         <img src="assets/Captura de tela 2026-05-02 221937.png" alt="App Mobile">
                     </div>
                 </div>
@@ -223,8 +238,8 @@
                         <p class="text-sm text-gray-400">Realize cálculos rápidos de orçamentos sem sair do aplicativo.</p>
                     </div>
                 </div>
-                <div class="flex-1 flex justify-center">
-                    <div class="phone-mockup transform rotate-1 hover:rotate-0 transition-all duration-500">
+                <div class="flex-1 flex justify-center phone-container">
+                    <div class="phone-mockup">
                         <img src="assets/Captura de tela 2026-05-02 222044.png" alt="Checklist e Financeiro">
                     </div>
                 </div>
