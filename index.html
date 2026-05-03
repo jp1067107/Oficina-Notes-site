@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Notes | Gestão Profissional para sua Oficina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .bg-gradient-green { background: radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.15) 0%, transparent 70%); }
+        .glass-card { background: rgba(26, 26, 26, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .green-glow { text-shadow: 0 0 10px rgba(34, 197, 94, 0.5); }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-gray-100">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 glass-card border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-[#22C55E] p-1.5 rounded-lg">
+                    <i data-lucide="wrench" class="text-black w-6 h-6"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight">OFICINA<span class="text-[#22C55E]">NOTES</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#funcionalidades" class="hover:text-white transition-colors">Funcionalidades</a>
+                <a href="#diferenciais" class="hover:text-white transition-colors">Diferenciais</a>
+                <a href="#precos" class="hover:text-white transition-colors">Preços</a>
+            </div>
+            <a href="#precos" class="bg-[#22C55E] text-black px-5 py-2 rounded-full font-bold text-sm hover:bg-[#1eb053] transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(34,197,94,0.3)]">
+                ASSINAR AGORA
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-6 overflow-hidden">
+        <div class="bg-gradient-green absolute inset-0 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-[#22C55E]/10 text-[#22C55E] text-xs font-bold tracking-widest uppercase mb-6 border border-[#22C55E]/20">
+                A Revolução na Gestão Automotiva
+            </span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Sua Oficina <span class="text-[#22C55E]">Organizada</span>,<br>Seu Tempo Valorizado.
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Abandone o papel e as anotações perdidas. O Oficina Notes é o app definitivo para criar Ordens de Serviço profissionais, gerenciar orçamentos e encantar seus clientes com agilidade.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#precos" class="bg-[#22C55E] text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#1eb053] transition-all flex items-center gap-2">
+                    <i data-lucide="zap" class="w-5 h-5"></i> Começar Agora
+                </a>
+                <a href="#funcionalidades" class="px-8 py-4 rounded-xl font-bold text-lg border border-white/10 hover:bg-white/5 transition-all">
+                    Ver Funcionalidades
+                </a>
+            </div>
+            
+            <!-- Hero Image / Mockup -->
+            <div class="mt-20 relative max-w-5xl mx-auto">
+                <div class="absolute -inset-1 bg-gradient-to-r from-[#22C55E] to-blue-500 rounded-2xl blur opacity-20"></div>
+                <img src="assets/Captura de tela 2026-05-02 221924.png" alt="Dashboard Oficina Notes" class="relative rounded-2xl border border-white/10 shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="funcionalidades" class="py-24 px-6 bg-[#0c0c0c]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Tudo o que você precisa</h2>
+                <p class="text-gray-400">Funcionalidades pensadas na rotina real de um mecânico.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-[#22C55E]/30 transition-all group">
+                    <div class="w-12 h-12 bg-[#22C55E]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#22C55E]/20 transition-all">
+                        <i data-lucide="layout-dashboard" class="text-[#22C55E]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Dashboard Inteligente</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Visualize todo o fluxo da sua oficina em uma única tela. Filtre por status: "Em Espera", "Na Oficina" ou "Finalizado" com um clique.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-[#22C55E]/30 transition-all group">
+                    <div class="w-12 h-12 bg-[#3B82F6]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#3B82F6]/20 transition-all">
+                        <i data-lucide="mic" class="text-[#3B82F6]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Comandos de Voz</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Mãos sujas de graxa? Não tem problema. Use a IA para ditar a descrição do serviço e o sistema transcreve tudo automaticamente.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-[#22C55E]/30 transition-all group">
+                    <div class="w-12 h-12 bg-[#22C55E]/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#22C55E]/20 transition-all">
+                        <i data-lucide="file-text" class="text-[#22C55E]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">PDFs Profissionais</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Gere orçamentos e recibos formatados instantaneamente. Envie para o cliente e transmita muito mais profissionalismo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Dive Features -->
+    <section class="py-24 px-6">
+        <div class="max-w-7xl mx-auto space-y-32">
+            
+            <!-- Row 1 -->
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <span class="text-[#22C55E] font-bold text-sm tracking-widest uppercase mb-4 block">Passo a Passo</span>
+                    <h2 class="text-4xl font-bold mb-6">Criação de OS Sem Complicação</h2>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-[#22C55E] w-5 h-5 mt-1"></i>
+                            <span><strong>Dados Básicos:</strong> Registro rápido de cliente, veículo e placa.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-[#22C55E] w-5 h-5 mt-1"></i>
+                            <span><strong>Checklist Visual:</strong> Marque itens de lataria e peças que precisam de atenção.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="check-circle" class="text-[#22C55E] w-5 h-5 mt-1"></i>
+                            <span><strong>Resumo Completo:</strong> Revise tudo antes de salvar e gerar o documento.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1">
+                    <img src="assets/Captura de tela 2026-05-02 221953.png" alt="Criação de OS" class="rounded-2xl border border-white/10 shadow-2xl transform rotate-2 hover:rotate-0 transition-all duration-500">
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16">
+                <div class="flex-1">
+                    <span class="text-[#3B82F6] font-bold text-sm tracking-widest uppercase mb-4 block">Agilidade no Pátio</span>
+                    <h2 class="text-4xl font-bold mb-6">Controle Tudo pelo Celular</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        O Oficina Notes é um PWA (Progressive Web App). Isso significa que você pode instalá-lo no seu celular e ter acesso direto, sem ocupar espaço na memória, funcionando com a fluidez de um app nativo.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                            <h4 class="font-bold mb-1">Avisar Pronto</h4>
+                            <p class="text-xs text-gray-500">Notificação rápida via WhatsApp.</p>
+                        </div>
+                        <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                            <h4 class="font-bold mb-1">Busca Rápida</h4>
+                            <p class="text-xs text-gray-500">Encontre qualquer OS pela placa.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="assets/Captura de tela 2026-05-02 221937.png" alt="App Mobile" class="rounded-2xl border border-white/10 shadow-2xl transform -rotate-2 hover:rotate-0 transition-all duration-500">
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <span class="text-[#22C55E] font-bold text-sm tracking-widest uppercase mb-4 block">Gestão Financeira</span>
+                    <h2 class="text-4xl font-bold mb-6">Transparência para seu Cliente</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Defina valores de forma flexível. Escolha entre um valor total simplificado ou detalhe por Peças, Mão de Obra e Materiais. O sistema ainda exporta tudo para planilhas Excel, facilitando seu controle contábil.
+                    </p>
+                    <div class="bg-[#22C55E]/10 p-6 rounded-2xl border border-[#22C55E]/20">
+                        <div class="flex items-center gap-3 mb-2">
+                            <i data-lucide="calculator" class="text-[#22C55E]"></i>
+                            <span class="font-bold">Calculadora Interna</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Realize cálculos rápidos de orçamentos sem sair do aplicativo.</p>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="assets/Captura de tela 2026-05-02 222044.png" alt="Checklist e Financeiro" class="rounded-2xl border border-white/10 shadow-2xl transform rotate-1 hover:rotate-0 transition-all duration-500">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="precos" class="py-24 px-6 bg-gradient-to-b from-[#0a0a0a] to-[#0c0c0c]">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 italic italic">"A organização é o segredo do lucro."</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-16">
+                Assine agora e tenha acesso ilimitado a todas as ferramentas. Transforme a percepção de valor do seu serviço hoje mesmo.
+            </p>
+            
+            <div class="max-w-md mx-auto relative">
+                <div class="absolute -inset-4 bg-[#22C55E] opacity-10 blur-3xl rounded-full"></div>
+                <div class="glass-card p-10 rounded-3xl border-2 border-[#22C55E]/50 relative">
+                    <span class="bg-[#22C55E] text-black text-xs font-bold px-3 py-1 rounded-full absolute -top-3 left-1/2 -translate-x-1/2">MELHOR ESCOLHA</span>
+                    <h3 class="text-2xl font-bold mb-2">Plano Profissional</h3>
+                    <div class="text-5xl font-bold my-8">R$ 49<span class="text-xl text-gray-500">,90/mês</span></div>
+                    
+                    <ul class="text-left space-y-4 mb-10 text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-[#22C55E] w-5 h-5"></i>
+                            Ordens de Serviço Ilimitadas
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-[#22C55E] w-5 h-5"></i>
+                            Transcrição por Voz (IA)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-[#22C55E] w-5 h-5"></i>
+                            Geração de PDFs Personalizados
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-[#22C55E] w-5 h-5"></i>
+                            Exportação para Excel
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-[#22C55E] w-5 h-5"></i>
+                            Suporte Prioritário
+                        </li>
+                    </ul>
+                    
+                    <a href="#" class="block w-full bg-[#22C55E] text-black py-4 rounded-xl font-bold text-lg hover:shadow-[0_0_20px_rgba(34,197,94,0.4)] transition-all">
+                        ASSINAR AGORA
+                    </a>
+                    <p class="text-xs text-gray-500 mt-4 italic">Cancele a qualquer momento. Sem fidelidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-gray-500 text-sm">
+            <div class="flex items-center gap-2">
+                <div class="bg-gray-800 p-1.5 rounded-lg">
+                    <i data-lucide="wrench" class="text-gray-400 w-4 h-4"></i>
+                </div>
+                <span class="font-bold tracking-tight text-gray-300">OFICINA<span class="text-[#22C55E]">NOTES</span></span>
+            </div>
+            <p>&copy; 2026 Oficina Notes. Todos os direitos reservados.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Termos</a>
+                <a href="#" class="hover:text-white transition-colors">Privacidade</a>
+                <a href="#" class="hover:text-white transition-colors">Contato</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
